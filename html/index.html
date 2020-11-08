@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- BackGround bubble start -->
+    <div class="background gradient">
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- BackGround bubble end -->
+
+    <!-- Header start -->
+    <header class="header container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm m-2 bg-white rounded"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="/img/logo.png"
+            width="30"
+            height="30"
+            alt=""
+            loading="lazy"
+          /><span class="text-monospace px-2">Blog-IT</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row px-3" id="navbarNav">
+          <ul class="navbar-nav col-lg">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Drama</a>
+                <a class="dropdown-item" href="#">Feel Good</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline col-lg-3 row">
+            <input
+              class="form-control mr-auto col-9"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success col-2" type="submit">
+              <i data-feather="search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+    <div class="content">
+      <div class="container mt-5">
+        <h3 class="rounded bg-white m-2 mt-5 text-center text-monospace py-2">
+          Recent Blogs
+        </h3>
+      </div>
+      <section class="blog-list d-flex p-4">
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+      </section>
+
+      <div class="container">
+        <h3 class="rounded bg-white m-2 mt-3 text-center text-monospace py-2">
+          All Blogs
+        </h3>
+        <div class="card-deck row mt-3 p-3">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1507065255811-f3b9fe968f84?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Secret of Failure</h5>
+                <p class="card-text">
+                  On a bright sunny morning a group of kids in the neighbourhood
+                  found an open field inviting for a game of football. However,
+                  there was an issue—they didn’t have a football kit. So, the
+                  kids decided that each one of them would bring one item to
+                  build the kit. One brought the football, another got the
+                  corner flag, and the remaining brought(..)
+                  <a href="javascript:checkLoggedIn(1)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>02-11-2020 at 2:17 PM</span> by Anny</small
+                ><br />
+                <small class="text-muted"> Categoery: <span>Team</span></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1506269351850-0428eaed2193?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjExMjU4fQ&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">I Am Not the Only One</h5>
+                <p class="card-text">
+                  A day in the COVID-19 life. I was out of shape. And so, about
+                  15(..) <a href="javascript:checkLoggedIn(2)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>02-11-2020 at 7:05 AM</span> by
+                  Shamli</small
+                ><br />
+                <small class="text-muted"> Categoery: <span>Team</span></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1485237254814-0003b25e5672?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hamari Kahani – Version 1</h5>
+                <p class="card-text">
+                  Co-authored by Shamshu Hirani &amp; Arun Nathani An IT
+                  professional while getting ready for work, gazed in the mirror
+                  and noticed a grey strand of hair. “Age is catching up,” he
+                  reflected gloomily, “and I still haven’t found my life
+                  partner!” His glance slid down to his old, faded(..)
+                  <a href="javascript:checkLoggedIn(3)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>01-11-2020 at 4:17 PM</span> by
+                  Rachel</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Attitude</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1500073584060-670c36a703f1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hamari Kahani – Version 2</h5>
+                <p class="card-text">
+                  Co-authored by Rohan Autee &amp; Arun Nathani An IT
+                  professional while getting ready for work, gazed in the mirror
+                  and noticed a grey strand of hair. “Age is catching up,” he
+                  reflected gloomily, “and I still haven’t found my life
+                  partner!” His glance slid down to his old, faded(..)
+                  <a href="javascript:checkLoggedIn(4)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>01-11-2020 at 10:47 PM</span> by
+                  Monica</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Attitude</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1500754088824-ce0582cfe45f?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=755&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dil Chahta Hai!</h5>
+                <p class="card-text">
+                  Yeh dosti… The older we get, the difficult it becomes to
+                  make(..)
+                  <a href="javascript:checkLoggedIn(5)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>31-10-2020 at 4:00 AM</span> by
+                  Chandler</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Purpose</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1501696461415-6bd6660c6742?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=668&amp;q=80"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Taare Zameen Par</h5>
+                <p class="card-text">
+                  Today is Cybage’s Silver Jubilee Anniversary. It has been
+                  a(..)
+                  <a href="javascript:checkLoggedIn(6)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>31-10-2020 at 11:47 PM</span> by Joey</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Purpose</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/user/erondu"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shamli Food bar</h5>
+                <p class="card-text">
+                  My life my rules!!!
+                  <a href="javascript:checkLoggedIn(11)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>07/11/2020 at 2:46 PM</span> by
+                  shamli</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Attitude</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/user/erondu"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Medicure(3 tier Web Application)</h5>
+                <p class="card-text">
+                  sdfghjkl
+                  <a href="javascript:checkLoggedIn(12)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>07/11/2020 at 3:15 PM</span> by
+                  shamli</small
+                ><br />
+                <small class="text-muted"> Categoery: <span>Luck</span></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/user/erondu"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">LOL</h5>
+                <p class="card-text">
+                  Life is full of surprises!!!!
+                  <a href="javascript:checkLoggedIn(13)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>07/11/2020 at 4:24 PM</span> by
+                  shamli</small
+                ><br />
+                <small class="text-muted"> Categoery: <span>Luck</span></small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img
+                class="card-img-top"
+                src="https://source.unsplash.com/random"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Shamli Food bar</h5>
+                <p class="card-text">
+                  This is what I love!
+                  <a href="javascript:checkLoggedIn(14)">read more...</a>
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>07/11/2020 at 9:31 PM</span> by
+                  shamli</small
+                ><br />
+                <small class="text-muted">
+                  Categoery: <span>Attitude</span></small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="card bg-stripped">
+              <img class="card-img-top" src="" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <blockquote style="text-align: center">
+                  <ul>
+                    <li>
+                      <hr id="null" />
+                      <hr id="null" />
+                      <span style="font-weight: bold; color: rgb(0, 0, 0)"
+                        >WOW</span
+                      >
+                    </li>
+                  </ul>
+                </blockquote>
+                <a href="javascript:checkLoggedIn(15)">read more...</a>
+                <p></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"
+                  ><i data-feather="heart"></i>0 Likes</small
+                >&nbsp;&nbsp;&nbsp;
+                <small class="text-muted"
+                  ><i data-feather="message-circle"></i>0 Comments</small
+                ><br />
+                <small class="text-muted">
+                  Created on: <span>07/11/2020 at 9:34 PM</span> by
+                  shamli</small
+                ><br />
+                <small class="text-muted"> Categoery: <span>Luck</span></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS files -->
+    <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
