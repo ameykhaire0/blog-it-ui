@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- BackGround bubble start -->
+    <div class="background gradient">
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- BackGround bubble end -->
+
+    <!-- Header start -->
+    <header class="header container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm m-2 bg-white rounded"
+        aria-label="top nav bar"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="/img/logo.png"
+            width="30"
+            height="30"
+            alt=""
+            loading="lazy"
+          /><span class="text-monospace px-2">Blog-IT</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse row px-3" id="navbarNav">
+          <ul class="navbar-nav col-lg">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Drama</a>
+                <a class="dropdown-item" href="#">Feel Good</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline col-lg-3 row">
+            <input
+              class="form-control mr-auto col-9"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success col-2 p-0 m-1" type="submit">
+              <i data-feather="search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <div class="content">
+      <div class="container mt-5">
+        <div class="rounded bg-white m-2 mt-5 text-monospace py-2 px-3">
+          <h3>Blog Title</h3>
+          <p class="text-muted m-0">
+            Article by
+            <a id="author" href="javascript:goToAuthor()" class="text-info"
+              >User name</a
+            >
+            on <span class="" id="postDate">21/11/2020</span> at
+            <span class="" id="postTime">20:33</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="rounded bg-white m-2 mt-3 p-4 row">
+        <img
+          src="https://source.unsplash.com/user/erondu"
+          alt="blog image"
+          class="img col-12 justify-content-center"
+          style="height: 25em; width: auto"
+        />
+        <div class="rounded bg-white m-2 mt-3 py-2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eos ex,
+          dicta vel inventore officiis sint illum quibusdam commodi illo
+          necessitatibus aliquam mollitia maxime, beatae debitis qui provident
+          molestias sequi. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Nisi perspiciatis, repellat eveniet accusantium dolor
+          dignissimos quas fugit inventore nostrum aperiam a modi illo delectus
+          recusandae mollitia excepturi quibusdam accusamus nobis. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Commodi, neque provident
+          fuga nemo dolor incidunt explicabo? Delectus, unde optio. Magni cumque
+          deleniti consequatur quibusdam dicta numquam dolorem sed! Consequatur,
+          iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          obcaecati autem, laudantium assumenda rerum molestias facere tempora
+          totam, vel rem ab quisquam. Accusantium architecto et sed nesciunt
+          exercitationem. Iure, accusantium. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Iste voluptatum deleniti, alias beatae
+          enim quas consequatur in eveniet molestias nostrum dolores, dolorem
+          voluptatem officiis voluptate ducimus repudiandae laudantium rem
+          minima!
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="rounded bg-white m-2 mt-3 p-4">
+        <span>
+          <em data-feather="heart"></em>
+          <span class="ml-1"> 10&nbsp;&nbsp;</span></span
+        ><em data-feather="message-circle"></em><span class="ml-1"> 30</span>
+        <hr />
+        <div class="row mb-3">
+          <img
+            src="/img/ava.jpeg"
+            alt="user"
+            class="col-4 col-md-2 rounded-pill h-25"
+          />
+          <div class="comment col row">
+            <div class="col-12 row">
+              <a class="text-monospace h5">User Name</a>
+              <span class="text-danger ml-auto col-1 justify-content-end"
+                ><em data-feather="trash-2"></em
+              ></span>
+            </div>
+            <p class="col-12">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam distinctio explicabo inventore, minima reiciendis delectus
+              accusantium earum voluptas eveniet officiis quam recusandae
+              eligendi fugiat quibusdam in dolores a cupiditate?
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row mb-3">
+          <img
+            src="/img/ava.jpeg"
+            alt="user"
+            class="col-4 col-md-2 rounded-pill h-25"
+          />
+          <div class="comment col row">
+            <div class="col-12 row">
+              <a class="text-monospace h5">User Name</a>
+              <span class="text-danger ml-auto col-1 justify-content-end"
+                ><em data-feather="trash-2"></em
+              ></span>
+            </div>
+            <p class="col-12">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam distinctio explicabo inventore, minima reiciendis delectus
+              accusantium earum voluptas eveniet officiis quam recusandae
+              eligendi fugiat quibusdam in dolores a cupiditate?
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="row mb-3">
+          <img
+            src="/img/ava.jpeg"
+            alt="user"
+            class="col-4 col-md-2 rounded-pill h-25"
+          />
+          <div class="comment col row">
+            <div class="col-12 row">
+              <a class="text-monospace h5">User Name</a>
+              <span class="text-danger ml-auto col-1 justify-content-end"
+                ><em data-feather="trash-2"></em
+              ></span>
+            </div>
+            <p class="col-12">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam distinctio explicabo inventore, minima reiciendis delectus
+              accusantium earum voluptas eveniet officiis quam recusandae
+              eligendi fugiat quibusdam in dolores a cupiditate?
+            </p>
+          </div>
+        </div>
+        <hr />
+        <form class="form-inline row">
+          <input
+            class="form-control col-10"
+            type="text"
+            placeholder="Reply to comment"
+            aria-label="Reply to comment"
+            id="reply-to-comment"
+          />
+          <button class="btn btn-outline-success col-1 m-auto" type="submit">
+            Reply
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="conatiner-fluid bg-white">
+      <h3 class="text-center text-monospace pt-3">Blog-IT</h3>
+      <p class="text-center text-muted">Some chessy shit</p>
+      <div class="links row justify-content-center pb-3 mx-0">
+        <a href="#"
+          ><em data-feather="facebook" class="m-2 text-primary"></em
+        ></a>
+        <a href="#"
+          ><em data-feather="github" class="m-2 text-secondary"></em
+        ></a>
+        <a href="#"
+          ><em data-feather="instagram" class="m-2 text-yellow"></em
+        ></a>
+        <a href="#"><em data-feather="twitter" class="m-2 text-info"></em></a>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn btn-secondary up-btn">
+      <em data-feather="arrow-up"></em>
+    </a>
+    <!-- JS files -->
+    <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

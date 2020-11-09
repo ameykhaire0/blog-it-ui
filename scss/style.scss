@@ -16,12 +16,13 @@ html {
 
 @import "bg-stripped";
 
-.content {
+.content,
+.content1 {
   margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
-  .content {
+  .content1 {
     margin-top: 0;
   }
 }

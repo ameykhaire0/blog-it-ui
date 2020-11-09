@@ -98,7 +98,7 @@
 
         <main
           role="main"
-          class="content col-md-9 ml-sm-auto col-lg-10 px-md-4 ml-auto pl-md-3"
+          class="content1 col-md-9 ml-sm-auto col-lg-10 px-md-4 ml-auto pl-md-3"
         >
           <div
             class="container mt-md-5 mb-4 bg-white rounded p-3"
@@ -109,7 +109,7 @@
                 id="userProfile"
                 src="/img/ava.jpeg"
                 alt=""
-                class="img-thumbnail rounded-circle my-3 col-md-3 col-lg-2"
+                class="img-thumbnail rounded-circle my-3 col-md-3 col-lg-2 py-auto"
               />
               <div class="col-md-9 col-lg-10">
                 <h4 class="text-monospace text-center" id="userName">
@@ -149,16 +149,20 @@
                 class="img-thumbnail rounded col-md-3 col-lg-2"
               />
               <div class="col-md-9 col-lg-10 pt-2">
-                <a class="text-monospace h4">Blog Title</a>
-
+                <div class="row">
+                  <a class="text-monospace h4 col">Blog Title</a>
+                  <span class="text-danger ml-auto col-1 justify-content-end"
+                    ><em data-feather="trash-2"></em
+                  ></span>
+                </div>
                 <hr />
-                <a href="#">
-                  <em data-feather="heart"></em><span class="ml-1">10</span>
-                </a>
-                <a href="#">
-                  <em data-feather="message-circle"></em
-                  ><span class="ml-1">30</span>
-                </a>
+
+                <span data-toggle="modal" data-target="#likeCommentModal">
+                  <em data-feather="heart"></em>
+                  <span class="ml-1">10</span></span
+                >
+                <em data-feather="message-circle"></em
+                ><span class="ml-1">30</span>
               </div>
             </div>
           </div>
@@ -257,6 +261,121 @@
         </main>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="likeCommentModal"
+      tabindex="-1"
+      aria-labelledby="likeCommentModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">likes</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <img
+                src="/img/ava.jpeg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+              />
+              <a class="text-monospace h5">User Name</a>
+            </div>
+            <div class="row mb-3">
+              <img
+                src="/img/ava.jpeg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill h-25"
+              />
+              <div class="comment col row">
+                <div class="col-12 row">
+                  <a class="text-monospace h5">User Name</a>
+                  <span class="text-danger ml-auto col-1 justify-content-end"
+                    ><em data-feather="trash-2"></em
+                  ></span>
+                </div>
+                <p class="col-12">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique totam distinctio explicabo inventore, minima
+                  reiciendis delectus accusantium earum voluptas eveniet
+                  officiis quam recusandae eligendi fugiat quibusdam in dolores
+                  a cupiditate?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <form class="form-inline row">
+              <input
+                class="form-control col-8"
+                type="text"
+                placeholder="Reply to comment"
+                aria-label="Reply to comment"
+                id="reply-to-comment"
+              />
+              <button
+                class="btn btn-outline-success col-3 ml-auto"
+                type="submit"
+              >
+                Reply
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      class="modal fade modal-dialog modal-dialog-scrollable"
+      id="likeCommentModal"
+      tabindex="-1"
+      aria-labelledby="likeCommentModal"
+      aria-hidden="true"
+    >
+      <div class="row">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="/img/logo.png" alt="user" class="col-2 rounded-pill" />
+              <a class="text-monospace h4">User Name</a>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
     <script src="/js/vendor/bootstrap.bundle.min.js"></script>

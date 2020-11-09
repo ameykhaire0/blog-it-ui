@@ -7476,11 +7476,12 @@ a.text-dark:hover, a.text-dark:focus {
   background: repeating-linear-gradient(45deg, transparent, transparent 3px, #ccc 3px, #ccc 6px);
   transform: translate(10px, 10px); }
 
-.content {
+.content,
+.content1 {
   margin-top: 5rem; }
 
 @media (min-width: 768px) {
-  .content {
+  .content1 {
     margin-top: 0; } }
 
 .feather {
