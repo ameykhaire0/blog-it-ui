@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Dashboard Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <!-- <link href="dashboard.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <div class="background gradient">
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light shadow m-2 bg-white rounded d-md-none"
+      aria-label="top-nav"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <nav
+          aria-label="sidebar"
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse shadow-sm"
+        >
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#dashboard">
+                  <span data-feather="home"></span>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myBlogs">
+                  <span data-feather="book"></span>
+                  My Blogs
+                </a>
+              </li>
+              <li class="nav-item m-auto">
+                <button class="btn btn-outline-danger nav-link">LogOut</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main
+          role="main"
+          class="content col-md-9 ml-sm-auto col-lg-10 px-md-4 ml-auto pl-md-3"
+        >
+          <div
+            class="container mt-md-5 mb-4 bg-white rounded p-3"
+            id="dashboard"
+          >
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded-circle my-3 col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10">
+                <h4 class="text-monospace text-center" id="userName">
+                  User Name
+                </h4>
+              </div>
+              <h5 class="">Stats</h5>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Blogs</th>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comments</th>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Likes</th>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3" id="myBlogs">
+            <h3 class="text-monospace text-center">My Blogs</h3>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10 pt-2">
+                <a class="text-monospace h4">Blog Title</a>
+
+                <hr />
+                <a href="#">
+                  <em data-feather="heart"></em><span class="ml-1">10</span>
+                </a>
+                <a href="#">
+                  <em data-feather="message-circle"></em
+                  ><span class="ml-1">30</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10 pt-2">
+                <a class="text-monospace h4">Blog Title</a>
+
+                <hr />
+                <a href="#">
+                  <em data-feather="heart"></em><span class="ml-1">10</span>
+                </a>
+                <a href="#">
+                  <em data-feather="message-circle"></em
+                  ><span class="ml-1">30</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10 pt-2">
+                <a class="text-monospace h4">Blog Title</a>
+
+                <hr />
+                <a href="#">
+                  <em data-feather="heart"></em><span class="ml-1">10</span>
+                </a>
+                <a href="#">
+                  <em data-feather="message-circle"></em
+                  ><span class="ml-1">30</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10 pt-2">
+                <a class="text-monospace h4">Blog Title</a>
+
+                <hr />
+                <a href="#">
+                  <em data-feather="heart"></em><span class="ml-1">10</span>
+                </a>
+                <a href="#">
+                  <em data-feather="message-circle"></em
+                  ><span class="ml-1">30</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
+            <div class="row mx-3">
+              <img
+                id="userProfile"
+                src="/img/ava.jpeg"
+                alt=""
+                class="img-thumbnail rounded col-md-3 col-lg-2"
+              />
+              <div class="col-md-9 col-lg-10 pt-2">
+                <a class="text-monospace h4">Blog Title</a>
+
+                <hr />
+                <a href="#">
+                  <em data-feather="heart"></em><span class="ml-1">10</span>
+                </a>
+                <a href="#">
+                  <em data-feather="message-circle"></em
+                  ><span class="ml-1">30</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/vendor/feather.min.js"></script>
+    <script>
+      feather.replace();
+      $(document).ready(() => {
+        $(".nav-link").click(function () {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

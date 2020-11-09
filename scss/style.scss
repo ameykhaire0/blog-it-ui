@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import "variables";
 
 @import "bg-gradient";
@@ -6,12 +10,32 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+@import "dashboard";
+
 @import "cards";
 
 @import "bg-stripped";
 
 .content {
   margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-top: 0;
+  }
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  margin: 9px 0;
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
 }
 // // Required
 // @import "../node_modules/bootstrap/scss/functions";

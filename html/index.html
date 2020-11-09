@@ -28,6 +28,7 @@
     <header class="header container">
       <nav
         class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm m-2 bg-white rounded"
+        aria-label="top nav bar"
       >
         <a class="navbar-brand" href="#">
           <img
@@ -95,7 +96,7 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success col-2" type="submit">
+            <button class="btn btn-outline-success col-2 p-0 m-1" type="submit">
               <i data-feather="search"></i>
             </button>
           </form>
@@ -103,7 +104,7 @@
       </nav>
     </header>
     <!-- Header end -->
-    <div class="content">
+    <div class="content" id="top">
       <div class="container mt-5">
         <h3 class="rounded bg-white m-2 mt-5 text-center text-monospace py-2">
           Recent Blogs
@@ -118,44 +119,7 @@
 
           <div class="blog-author">
             <a class="author-avatar" href="#">
-              <img src="/img/ava.jpeg" />
-            </a>
-            <svg class="half-circle" viewBox="0 0 106 57">
-              <defs>
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop
-                    offset="0%"
-                    style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
-                  />
-                  <stop
-                    offset="100%"
-                    style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
-                  />
-                </linearGradient>
-              </defs>
-              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-            </svg>
-
-            <div class="author-name">
-              <div class="author-name-prefix">Author</div>
-              Jeff Delaney
-            </div>
-          </div>
-          <div class="tags">
-            <a href="#">html</a>
-            <a href="#">css</a>
-            <a href="#">web-dev</a>
-          </div>
-        </article>
-        <article class="blog">
-          <header class="blog-header">
-            <p>Sep 11th 2020</p>
-            <h2>Never forget</h2>
-          </header>
-
-          <div class="blog-author">
-            <a class="author-avatar" href="#">
-              <img src="/img/ava.jpeg" />
+              <img src="/img/ava.jpeg" alt="Avatar" />
             </a>
             <svg class="half-circle" viewBox="0 0 106 57">
               <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -180,7 +144,7 @@
 
           <div class="blog-author">
             <a class="author-avatar" href="#">
-              <img src="/img/ava.jpeg" />
+              <img src="/img/ava.jpeg" alt="Avatar" />
             </a>
             <svg class="half-circle" viewBox="0 0 106 57">
               <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -205,7 +169,7 @@
 
           <div class="blog-author">
             <a class="author-avatar" href="#">
-              <img src="/img/ava.jpeg" />
+              <img src="/img/ava.jpeg" alt="Avatar" />
             </a>
             <svg class="half-circle" viewBox="0 0 106 57">
               <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -230,7 +194,32 @@
 
           <div class="blog-author">
             <a class="author-avatar" href="#">
-              <img src="/img/ava.jpeg" />
+              <img src="/img/ava.jpeg" alt="Avatar" />
+            </a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Jeff Delaney
+            </div>
+          </div>
+          <div class="tags">
+            <a href="#">html</a>
+            <a href="#">css</a>
+            <a href="#">web-dev</a>
+          </div>
+        </article>
+        <article class="blog">
+          <header class="blog-header">
+            <p>Sep 11th 2020</p>
+            <h2>Never forget</h2>
+          </header>
+
+          <div class="blog-author">
+            <a class="author-avatar" href="#">
+              <img src="/img/ava.jpeg" alt="Avatar" />
             </a>
             <svg class="half-circle" viewBox="0 0 106 57">
               <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -254,7 +243,7 @@
           All Blogs
         </h3>
         <div class="card-deck row mt-3 p-3">
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -275,10 +264,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>02-11-2020 at 2:17 PM</span> by Anny</small
@@ -287,7 +276,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -303,10 +292,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>02-11-2020 at 7:05 AM</span> by
@@ -316,7 +305,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -336,10 +325,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>01-11-2020 at 4:17 PM</span> by
@@ -351,7 +340,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -371,10 +360,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>01-11-2020 at 10:47 PM</span> by
@@ -386,7 +375,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -403,10 +392,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>31-10-2020 at 4:00 AM</span> by
@@ -418,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -435,10 +424,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>31-10-2020 at 11:47 PM</span> by Joey</small
@@ -449,7 +438,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -465,10 +454,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>07/11/2020 at 2:46 PM</span> by
@@ -480,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -496,10 +485,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>07/11/2020 at 3:15 PM</span> by
@@ -509,7 +498,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -525,10 +514,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>07/11/2020 at 4:24 PM</span> by
@@ -538,7 +527,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img
                 class="card-img-top"
@@ -554,10 +543,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>07/11/2020 at 9:31 PM</span> by
@@ -569,7 +558,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <div class="card bg-stripped">
               <img class="card-img-top" src="" alt="Card image cap" />
               <div class="card-body">
@@ -591,10 +580,10 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted"
-                  ><i data-feather="heart"></i>0 Likes</small
+                  ><em data-feather="heart"></em>0 Likes</small
                 >&nbsp;&nbsp;&nbsp;
                 <small class="text-muted"
-                  ><i data-feather="message-circle"></i>0 Comments</small
+                  ><em data-feather="message-circle"></em>0 Comments</small
                 ><br />
                 <small class="text-muted">
                   Created on: <span>07/11/2020 at 9:34 PM</span> by
@@ -607,6 +596,45 @@
         </div>
       </div>
     </div>
+
+    <nav aria-label="page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer class="conatiner-fluid bg-white">
+      <h3 class="text-center text-monospace pt-3">Blog-IT</h3>
+      <p class="text-center text-muted">Some chessy shit</p>
+      <div class="links row justify-content-center pb-3 mx-0">
+        <a href="#"
+          ><em data-feather="facebook" class="m-2 text-primary"></em
+        ></a>
+        <a href="#"
+          ><em data-feather="github" class="m-2 text-secondary"></em
+        ></a>
+        <a href="#"
+          ><em data-feather="instagram" class="m-2 text-yellow"></em
+        ></a>
+        <a href="#"><em data-feather="twitter" class="m-2 text-info"></em></a>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn btn-secondary up-btn">
+      <em data-feather="arrow-up"></em>
+    </a>
     <!-- JS files -->
     <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
     <script src="/js/vendor/bootstrap.bundle.min.js"></script>
