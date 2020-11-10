@@ -7,9 +7,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Dashboard Template · Bootstrap</title>
+    <script src="../js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="/js/vendor/feather.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"
+    />
 
     <style>
       .bd-placeholder-img {
@@ -107,29 +113,35 @@
             <div class="row mx-3">
               <img
                 id="userProfile"
-                src="/img/ava.jpeg"
+                src="/images/ava.jpeg"
                 alt=""
                 class="img-thumbnail rounded-circle my-3 col-md-3 col-lg-2 py-auto"
               />
               <div class="col-md-9 col-lg-10">
-                <h4 class="text-monospace text-center" id="userName">
-                  User Name
-                </h4>
+                <h4 class="text-monospace text-center" id="userName"></h4>
+                <h6 class="text-monospace text-center">
+                  <span
+                    id="edit_profile"
+                    data-toggle="modal"
+                    data-target="#profilePicture"
+                    ><em data-feather="edit"></em> Profile Picture</span
+                  >
+                </h6>
               </div>
               <h5 class="">Stats</h5>
               <table class="table table-striped">
                 <tbody>
                   <tr>
                     <th scope="row">Blogs</th>
-                    <td>20</td>
+                    <td id="no_of_blogs"></td>
                   </tr>
                   <tr>
                     <th scope="row">Comments</th>
-                    <td>30</td>
+                    <td id="no_of_comments"></td>
                   </tr>
                   <tr>
                     <th scope="row">Likes</th>
-                    <td>100</td>
+                    <td id="no_of_likes"></td>
                   </tr>
                 </tbody>
               </table>
@@ -139,133 +151,15 @@
           <div class="container mt-md-5 mb-4 bg-white rounded p-3" id="myBlogs">
             <h3 class="text-monospace text-center">My Blogs</h3>
           </div>
-
-          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
-            <div class="row mx-3">
-              <img
-                id="userProfile"
-                src="/img/ava.jpeg"
-                alt=""
-                class="img-thumbnail rounded col-md-3 col-lg-2"
-              />
-              <div class="col-md-9 col-lg-10 pt-2">
-                <div class="row">
-                  <a class="text-monospace h4 col">Blog Title</a>
-                  <span class="text-danger ml-auto col-1 justify-content-end"
-                    ><em data-feather="trash-2"></em
-                  ></span>
-                </div>
-                <hr />
-
-                <span data-toggle="modal" data-target="#likeCommentModal">
-                  <em data-feather="heart"></em>
-                  <span class="ml-1">10</span></span
-                >
-                <em data-feather="message-circle"></em
-                ><span class="ml-1">30</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
-            <div class="row mx-3">
-              <img
-                id="userProfile"
-                src="/img/ava.jpeg"
-                alt=""
-                class="img-thumbnail rounded col-md-3 col-lg-2"
-              />
-              <div class="col-md-9 col-lg-10 pt-2">
-                <a class="text-monospace h4">Blog Title</a>
-
-                <hr />
-                <a href="#">
-                  <em data-feather="heart"></em><span class="ml-1">10</span>
-                </a>
-                <a href="#">
-                  <em data-feather="message-circle"></em
-                  ><span class="ml-1">30</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
-            <div class="row mx-3">
-              <img
-                id="userProfile"
-                src="/img/ava.jpeg"
-                alt=""
-                class="img-thumbnail rounded col-md-3 col-lg-2"
-              />
-              <div class="col-md-9 col-lg-10 pt-2">
-                <a class="text-monospace h4">Blog Title</a>
-
-                <hr />
-                <a href="#">
-                  <em data-feather="heart"></em><span class="ml-1">10</span>
-                </a>
-                <a href="#">
-                  <em data-feather="message-circle"></em
-                  ><span class="ml-1">30</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
-            <div class="row mx-3">
-              <img
-                id="userProfile"
-                src="/img/ava.jpeg"
-                alt=""
-                class="img-thumbnail rounded col-md-3 col-lg-2"
-              />
-              <div class="col-md-9 col-lg-10 pt-2">
-                <a class="text-monospace h4">Blog Title</a>
-
-                <hr />
-                <a href="#">
-                  <em data-feather="heart"></em><span class="ml-1">10</span>
-                </a>
-                <a href="#">
-                  <em data-feather="message-circle"></em
-                  ><span class="ml-1">30</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="container mt-md-5 mb-4 bg-white rounded p-3">
-            <div class="row mx-3">
-              <img
-                id="userProfile"
-                src="/img/ava.jpeg"
-                alt=""
-                class="img-thumbnail rounded col-md-3 col-lg-2"
-              />
-              <div class="col-md-9 col-lg-10 pt-2">
-                <a class="text-monospace h4">Blog Title</a>
-
-                <hr />
-                <a href="#">
-                  <em data-feather="heart"></em><span class="ml-1">10</span>
-                </a>
-                <a href="#">
-                  <em data-feather="message-circle"></em
-                  ><span class="ml-1">30</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <div id="user-profile-posts"></div>
         </main>
       </div>
     </div>
 
-    <!-- Modal -->
+    <!--comment Modal -->
     <div
       class="modal fade"
-      id="likeCommentModal"
+      id="commentModal"
       tabindex="-1"
       aria-labelledby="likeCommentModal"
       aria-hidden="true"
@@ -273,7 +167,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTitle">likes</h5>
+            <h5 class="modal-title">Comments</h5>
             <button
               type="button"
               class="close"
@@ -283,18 +177,10 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <div class="mb-3">
+          <div class="modal-body" id="whoCommentedData">
+            <!-- <div class="row mb-3">
               <img
-                src="/img/ava.jpeg"
-                alt="user"
-                class="col-4 col-md-2 rounded-pill"
-              />
-              <a class="text-monospace h5">User Name</a>
-            </div>
-            <div class="row mb-3">
-              <img
-                src="/img/ava.jpeg"
+                src="/images/ava.jpeg"
                 alt="user"
                 class="col-4 col-md-2 rounded-pill h-25"
               />
@@ -306,88 +192,144 @@
                   ></span>
                 </div>
                 <p class="col-12">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique totam distinctio explicabo inventore, minima
-                  reiciendis delectus accusantium earum voluptas eveniet
-                  officiis quam recusandae eligendi fugiat quibusdam in dolores
-                  a cupiditate?
+                  asdfsfgds
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="modal-footer">
-            <form class="form-inline row">
-              <input
-                class="form-control col-8"
-                type="text"
-                placeholder="Reply to comment"
-                aria-label="Reply to comment"
-                id="reply-to-comment"
-              />
-              <button
-                class="btn btn-outline-success col-3 ml-auto"
-                type="submit"
-              >
-                Reply
-              </button>
-            </form>
+          <div class="modal-footer" id="footerCommentReply">
+           
           </div>
         </div>
       </div>
     </div>
-    <!-- <div
-      class="modal fade modal-dialog modal-dialog-scrollable"
-      id="likeCommentModal"
+    <!-- profile pics modal -->
+    <div
+      class="modal fade"
+      id="profilePicture"
       tabindex="-1"
       aria-labelledby="likeCommentModal"
       aria-hidden="true"
     >
-      <div class="row">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Profile Pictures</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="col-12 row mb-3 profile_images">
+              <img
+                src="/images/minion1.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img1"
+              />
+              <img
+                src="/images/minion2.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img2"
+              />
+              <img
+                src="/images/minion3.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img3"
+              />
+              <img
+                src="/images/minion4.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img4"
+              />
+              <img
+                src="/images/minion5.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img5"
+              />
+              <img
+                src="/images/minion6.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img6"
+              />
+              <img
+                src="/images/minion7.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img7"
+              />
+              <img
+                src="/images/minion8.jpg"
+                alt="user"
+                class="col-4 col-md-2 rounded-pill"
+                data-filter="img8"
+              />
             </div>
-            <div class="modal-body">
-              <img src="/img/logo.png" alt="user" class="col-2 rounded-pill" />
-              <a class="text-monospace h4">User Name</a>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-outline-success col-2 ml-auto"
+              type="button"
+              id="add-profile-pic"
+            >
+              Select
+            </button>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script>
+    <!-- likes Post Modal -->
+    <div
+      class="modal fade"
+      id="likeModal"
+      tabindex="-1"
+      aria-labelledby="likeCommentModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Profile Pictures</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-12 row" id="whoLikedData">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="/js/vendor/feather.min.js"></script>
+
+    <script src="/js/vendor/dashboard.js"></script>
+
+    <!-- <script src="/js/vendor/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <script>
-      feather.replace();
-      $(document).ready(() => {
-        $(".nav-link").click(function () {
-          $(".nav-link").removeClass("active");
-          $(this).addClass("active");
-        });
-      });
+      // feather.replace();
+      // $(document).ready(() => {
+      //   $(".nav-link").click(function () {
+      //     $(".nav-link").removeClass("active");
+      //     $(this).addClass("active");
+      //   });
+      // });
     </script>
   </body>
 </html>

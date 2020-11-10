@@ -7476,6 +7476,9 @@ a.text-dark:hover, a.text-dark:focus {
   background: repeating-linear-gradient(45deg, transparent, transparent 3px, #ccc 3px, #ccc 6px);
   transform: translate(10px, 10px); }
 
+.img-selected {
+  opacity: 0.4; }
+
 .content,
 .content1 {
   margin-top: 5rem; }
